@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList test Should create valid markup 1`] = `
+<h2
+  className="numberOfItems-0-0-2"
+>
+  0
+   Item(s)
+</h2>
+`;

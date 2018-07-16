@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem test Should create valid markup 1`] = `
+<div
+  className="item-0-0-3 "
+>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <span
+    className="content-0-0-4"
+  >
+    content
+  </span>
+  <span
+    className="date-0-0-5"
+  >
+    Sun Jul 15 2018
+  </span>
+  <button
+    aria-label="edit"
+    className="icon-0-0-6 editButton-0-0-8 "
+    disabled={false}
+    name="edit"
+    onClick={[Function]}
+  />
+  <button
+    aria-label="delete"
+    className="icon-0-0-6 deleteButton-0-0-7"
+    name="delete"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`TodoItem test Should create valid markup when editing 1`] = `
+<div
+  className="item-0-0-3 "
+>
+  <form
+    className="todoInput-0-0-11"
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="todoInput"
+    >
+      Edit
+    </label>
+    <input
+      className="todoTextInput-0-0-12"
+      defaultValue="content"
+      id="todoInput"
+      onChange={[Function]}
+      required={true}
+      type="text"
+    />
+    <button
+      aria-label="save"
+      className="icon-0-0-6 saveButton-0-0-10"
+      disabled={false}
+      type="submit"
+    />
+  </form>
+</div>
+`;

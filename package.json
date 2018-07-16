@@ -1,0 +1,84 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "yarn": "1.x.x"
+  },
+  "scripts": {
+    "clean": "rm -rfv ./dist",
+    "build": "yarn clean && tsc",
+    "build:watch": "yarn clean && tsc -w",
+    "start": "node ./dist/src/index.js",
+    "build:fuse": "node ./fuse.js",
+    "build:fuse:dist": "node ./fuse.js dist",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll --coverage",
+    "test:update": "jest -u"
+  },
+  "dependencies": {
+    "jss": "^9.8.7",
+    "jss-preset-default": "^4.5.0",
+    "koa": "^2.5.2",
+    "koa-static": "^5.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-jss": "^8.6.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "reselect": "^3.0.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.11",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jest": "^23.1.6",
+    "@types/jss": "^9.5.3",
+    "@types/koa": "^2.0.46",
+    "@types/koa-static": "^4.0.0",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-redux": "^6.0.4",
+    "@types/react-test-renderer": "^16.0.1",
+    "@types/redux": "^3.6.0",
+    "@types/uuid": "^3.4.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "fuse-box": "^3.4.0",
+    "jest": "^23.4.1",
+    "react-test-renderer": "^16.4.1",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.9.2",
+    "uglify-js": "^3.4.4"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": [
+      "**/src/**/*.{ts,js,tsx,jsx}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "dis/src/index.js",
+      "node_modules",
+      "dis/src/views/index.js",
+      "dis/src/views/reducers/Store.js"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "roots": [
+      "./test"
+    ],
+    "verbose": false,
+    "bail": false,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

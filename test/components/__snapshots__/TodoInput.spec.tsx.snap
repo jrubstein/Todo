@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoInput test Should create valid markup 1`] = `
+<form
+  className="todoInput-0-0-11"
+  onSubmit={[Function]}
+>
+  <label
+    htmlFor="todoInput"
+  >
+    label
+  </label>
+  <input
+    className="todoTextInput-0-0-12"
+    id="todoInput"
+    onChange={[Function]}
+    required={true}
+    type="text"
+  />
+  <button
+    aria-label="save"
+    className="icon-0-0-6 saveButton-0-0-10"
+    disabled={false}
+    type="submit"
+  />
+</form>
+`;
